@@ -1,0 +1,16 @@
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  data_param {
+    source: "ilsvrc12_val_lmdb"
+    backend: LMDB
+    batch_size: 64
+  }
+  transform_param {
+    crop_size: 227
+    mean_file: "mean.binaryproto"
+    mirror: true
+#     scale: 0.0039
+  }
+}

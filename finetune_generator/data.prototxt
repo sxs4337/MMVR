@@ -1,0 +1,18 @@
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  data_param {
+    # source: "ilsvrc12_train_lmdb"
+    source: "data/ImageNet_train_val_lmdb"
+    backend: LMDB
+    batch_size: 64 # batch size
+  }
+  transform_param {
+    crop_size: 227
+    #mean_file: "mean.binaryproto"
+    mean_file: "data/ImageNet_train_val_mean.binaryproto"
+    mirror: true
+#     scale: 0.0039
+  }
+}
