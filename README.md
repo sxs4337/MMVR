@@ -1,5 +1,6 @@
 ### SEMANTICALLY INVARIANT TEXT-TO-IMAGE GENERATION at ICIP 2018
 
+http://www.cis.rit.edu/~sxs4337/publication/Sah_ICIP18_Semantically_Invariant.pdf
 
 Dependencies--
 Caffe LRCN- A clone from the recurrent branch of the LRCN caffe by Jeff Donahue http://jeffdonahue.com/lrcn/
